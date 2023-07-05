@@ -7,8 +7,6 @@ dotenv.config({
     path: envPath,
 });
 
-export default {
-    PORT: process.env.PORT,
-    DB_USER: process.env.DB_USER,
-    DB_PASS: process.env.DB_PASS
-};
+export const PORT = process.env.PORT;
+export const DB_USER = process.env.DB_USER;
+export const DB_PASS = process.env.DB_PASS;
