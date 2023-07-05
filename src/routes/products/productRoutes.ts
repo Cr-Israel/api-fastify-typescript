@@ -3,6 +3,7 @@ import { Create } from '../../controllers/products/Create';
 import { GetProducts } from '../../controllers/products/GetProducts';
 import { GetProductById } from '../../controllers/products/GetProductById';
 import { Update } from '../../controllers/products/Update';
+import { Delete } from '../../controllers/products/Delete';
 
 export async function productRoutes(server: FastifyInstance) {
     // Create a Product
@@ -13,4 +14,6 @@ export async function productRoutes(server: FastifyInstance) {
     server.get('/:id', GetProductById);
     // Update a single Product
     server.patch('/update/:id', Update);
+    // Delete a single Product
+    server.delete('/delete/:id', Delete);
 };

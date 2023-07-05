@@ -23,3 +23,6 @@ Content-Type: application/json
     "price": 3500,
     "description": "Um ótimo computador para trabalhar e estudar!"
 }
+
+### DELELETE A PRODUCT
+DELETE http://localhost:5000/products/delete/64a574a5ceb0dfde92847223 HTTP/1.1
